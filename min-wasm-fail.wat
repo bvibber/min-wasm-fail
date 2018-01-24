@@ -1,14 +1,14 @@
 (module
   (memory 1)
-  (func $load (param i32) (result i32)
-    get_local 0
+  (func $test (param $loc i32) (result i32)
+    ;; Safari on iOS 11.2.5 returns 0 when asked to modify and read loc 4
+    ;; via a parameter. If using an i32.const or a local for the location,
+    ;; it works as expected.
+    get_local $loc
+    i32.const 1
+    i32.store
+    get_local $loc
     i32.load
   )
-  (func $store (param i32) (param i32)
-    get_local 0
-    get_local 1
-    i32.store
-  )
-  (export "load" (func $load))
-  (export "store" (func $store))
+  (export "test" (func $test))
 )
