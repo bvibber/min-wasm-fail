@@ -5,7 +5,6 @@ function testSafariWebAssemblyBug() {
 
   // test storing to and loading from a non-zero location via a parameter.
   // Safari on iOS 11.2.5 returns 0 unexpectedly at non-zero locations
-  console.log(inst.exports.test(4));
   return (inst.exports.test(4) !== 0);
 }
 
