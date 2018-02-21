@@ -1,3 +1,5 @@
+// This code is released as public domain -- anyone may use it for any purpose.
+
 function testSafariWebAssemblyBug() {
   var bin = new Uint8Array(INSERT_BYTES_HERE);
   var mod = new WebAssembly.Module(bin);

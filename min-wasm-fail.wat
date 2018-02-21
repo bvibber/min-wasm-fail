@@ -1,3 +1,4 @@
+;; This code is released as public domain -- anyone may use it for any purpose.
 (module
   (memory 1)
   (func $test (param $loc i32) (result i32)

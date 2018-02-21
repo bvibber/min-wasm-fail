@@ -5,3 +5,5 @@ Live copy at https://brionv.com/misc/min-wasm-fail/
 See [ready-to-use source](https://github.com/brion/min-wasm-fail/blob/master/min-wasm-fail.js) which can run synchronously in browser.
 
 See emscripten bug tracker: https://github.com/kripken/emscripten/issues/6042
+
+This code is released as public domain -- anyone may use it for any purpose.
